@@ -4,14 +4,12 @@ if(!isset($page_title))
 {
 $page_title ="Staff area";
 }
-
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
 <title>PO - <?php echo $page_title; ?> </title>
-<link rel="stylesheet" mdeia="all" href="../stylesheets/staff.css" />
+<link rel="stylesheet" mdeia="all" href="<?php echo url_for('/stylesheets/staff.css'); ?>" />
 </head>
 <body>
 <header>
@@ -19,8 +17,7 @@ $page_title ="Staff area";
 </header>
 <navigation>
   <ul>
-    <li><a href="index.php">Menu</a></li>
-    
+    <li><a href="<?php echo url_for('/staff/index.php'); ?>">Menu</a></li>
 
   </ul>
 </navigation>
